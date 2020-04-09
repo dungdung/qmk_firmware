@@ -39,4 +39,5 @@ SRC += ssd1306.c
 # if firmware size over limit, try this option
 # CFLAGS += -flto
 
+LAYOUTS = ortho_4x12
 DEFAULT_FOLDER = crkbd/rev1

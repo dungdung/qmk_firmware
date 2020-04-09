@@ -26,8 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT         Helix Beta
 #define DESCRIPTION     A split keyboard for the cheap makers
 
-#define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 100
+//#define TAPPING_FORCE_HOLD
+//#define TAPPING_TERM 100
 
 /* Use I2C or Serial */
 #define USE_SERIAL
@@ -94,7 +94,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //    see ./rules.mk: LED_BACK_ENABLE or LED_UNDERGLOW_ENABLE set yes
 #ifdef RGBLED_BACK
   #if MATRIX_ROWS == 8 // HELIX_ROWS == 4
-    #define RGBLED_NUM 25
+    #define RGBLED_NUM 24 // 25
   #else
     #define RGBLED_NUM 32
   #endif
@@ -156,7 +156,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* disable action features */
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
-//#define NO_ACTION_MACRO
-//#define NO_ACTION_FUNCTION
+#define NO_ACTION_ONESHOT
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
 
